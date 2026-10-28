@@ -1,12 +1,12 @@
-# KD Experiment — LeafLens Field Guide
+# PlantDoctor - KD Experiment
 
-LeafLens is an experimental mobile app for checking crop leaves with an image classifier that runs on the device. Take a photo or choose one from the gallery to see the most likely crop condition and the model's top three predictions.
+PlantDoctor is an experimental mobile app for checking crop leaves with an image classifier that runs on the device. Take a photo or choose one from the gallery to see the most likely crop condition and the model's top three predictions.
 
 > **Experimental project:** predictions are model estimates, not a professional diagnosis or treatment recommendation. Check important crop-health decisions with a qualified agricultural expert.
 
 ## What’s inside
 
-- **LeafLens Field Guide** — an Expo and React Native app in `PlantDoctor/`.
+- **PlantDoctor mobile app** — an Expo and React Native app in `PlantDoctor/`.
 - **On-device inference** — the app loads the bundled ONNX model with ONNX Runtime for React Native. Inference does not require sending the leaf image to a server.
 - **38 output classes** — crop and condition labels are stored in `PlantDoctor/assets/model/class_names.json` and paired with the model output order.
 - **Model artifacts** — `deploy_bundle/` contains the ONNX model, its class list, and a PyTorch checkpoint. The app uses the ONNX model; the `.pth` file is retained as an experiment artifact.
