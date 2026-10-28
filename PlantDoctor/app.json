@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "LeafLens Field Guide",
+    "slug": "leaflens-field-guide",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/leaflens-icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/leaflens-icon.png",
+      "resizeMode": "contain",
+      "imageWidth": 180,
+      "backgroundColor": "#1F3D2B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.leaflens.fieldguide"
+    },
+    "android": {
+      "package": "com.leaflens.fieldguide",
+      "adaptiveIcon": {
+        "backgroundColor": "#1F3D2B",
+        "foregroundImage": "./assets/leaflens-icon.png",
+        "backgroundImage": "./assets/android-icon-background.png"
+      }
+    },
+    "plugins": [
+      "./plugins/withOnnxAndroidVersion",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "LeafLens uses the camera to scan crop leaves on this device.",
+          "photosPermission": "LeafLens uses selected photos to analyze crop leaves on this device."
+        }
+      ]
+    ],
+    "assetBundlePatterns": [
+      "assets/**/*"
+    ]
+  }
+}
